@@ -1,9 +1,14 @@
 #include<stdio.h>
+#include<stdlib.h>
+#include<stdbool.h>
+
 
 int set_bit(int,int);
 int clear_bit(int,int);
 void print_bits(int);
 int set_bitcnt(int);
+int clear_bitcnt(int);
+
 
 /**
 *@brief Printing the bits of the integer number 
@@ -85,6 +90,34 @@ int set_bitcnt(int num)
   
 }
 
+
+/**
+*@brief count the zero bits in a integer number 
+*
+*@param num is a integer number 
+*@return count integer will be returned 
+  */
+int clear_bitcnt(int num)
+{
+  static cnt = 0;
+  for(int i = 31;i>=0;i--)
+    if((num>>i&1)!=1)
+      cnt++;
+  return cnt;
+      
+}
+
+
+/**
+*@brief set first five odd bits in a integer number 
+*
+*@param num is a integer number 
+*@return updated integer number 
+  */
+int set_5oddbits(int num)
+{
+  
+}
 
 int main()
 {
