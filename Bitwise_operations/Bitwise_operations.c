@@ -74,8 +74,11 @@ int main()
     printf("Let's Start \n");
     int num = 10,pos=2;
     num = set_bit(num,pos);
-
     print_bits(num);
-
+    num = clear_bit(num,pos);
+    print_bits(num);
+    num = toggle(num,pos);
+    print_bits(num);
+    
     return 0;
 }
