@@ -97,7 +97,7 @@ int main()
     num = toggle(num,pos);
     print_bits(num);
     cnt = set_bitcnt(num);
-    
+    print_bits(num);
     
     return 0;
 }
