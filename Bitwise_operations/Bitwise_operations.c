@@ -69,6 +69,16 @@ int toggle(int num,int pos)
 }
 
 
+/**
+*@brief 
+*
+*
+*
+  */
+int set_bitcnt(int num)
+{
+  
+}
 int main()
 {
     printf("Let's Start \n");
