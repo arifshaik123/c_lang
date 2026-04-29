@@ -18,10 +18,12 @@ int set_bit(int num,int pos)
 }
 
 
-/*
-
-
-*/
+/**
+*@brief Printing the bits of the integer number 
+*
+*@param num is integer
+*@return Nothing to return 
+   */
 void print_bits(int num)
 {
     int count = 0;
