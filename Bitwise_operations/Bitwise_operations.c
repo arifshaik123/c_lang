@@ -4,20 +4,6 @@ int set_bit(int,int);
 int clear_bit(int,int);
 void print_bits(int);
 
-/** 
- *@brief Set the bit of a number at a particular position
- *
- *@param num is a integer number
- *@param pos is a position number
- *@return updated integer number 
-    */
-int set_bit(int num,int pos)
-{
-    num = (num|(1<<pos));
-
-    return num;
-}
-
 
 /**
 *@brief Printing the bits of the integer number 
@@ -38,6 +24,21 @@ void print_bits(int num)
             count = 0;
         }
     }
+}
+
+
+/** 
+ *@brief Set the bit of a number at a particular position
+ *
+ *@param num is a integer number
+ *@param pos is a position number
+ *@return updated integer number 
+    */
+int set_bit(int num,int pos)
+{
+    num = (num|(1<<pos));
+
+    return num;
 }
 
 
