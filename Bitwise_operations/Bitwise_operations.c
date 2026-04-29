@@ -5,6 +5,12 @@ int set_bit(int,int);
 
 
 //THIS FUNCTION PERFORMS TO SET THE PARTICULAR BIT POSITION 
+
+/*
+
+
+
+*/
 int set_bit(int num,int pos)
 {
     num = (num|(1<<pos));
@@ -12,6 +18,11 @@ int set_bit(int num,int pos)
     return num;
 }
 
+
+/*
+
+
+*/
 void print_bits(int num)
 {
     int count = 0;
