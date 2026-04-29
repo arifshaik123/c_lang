@@ -55,6 +55,18 @@ int clear_bit(int num,int pos)
    return num;
 }
 
+/**
+ *@brief Toggle the bit of a number at a particular position
+ *
+ *@param num is a integer number 
+ *@param pos is a position number 
+ *@returns updated integer number  
+  */
+int toggle(int num,int pos)
+{
+  num = (num^(1<<pos));
+  return num;
+}
 
 
 int main()
