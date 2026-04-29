@@ -1,16 +1,16 @@
 #include<stdio.h>
 
 int set_bit(int,int);
+void print_bits(int);
 
+/** 
+ *@breif Set the bit of a number at a particular position
+ *
+ *@param num is a integer number
+ *@param pos is a position number
+ *@return updated integer number 
+    */
 
-
-//THIS FUNCTION PERFORMS TO SET THE PARTICULAR BIT POSITION 
-
-/*
-
-
-
-*/
 int set_bit(int num,int pos)
 {
     num = (num|(1<<pos));
