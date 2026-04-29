@@ -89,13 +89,15 @@ int set_bitcnt(int num)
 int main()
 {
     printf("Let's Start \n");
-    int num = 10,pos=2;
+    int num = 10,pos=2,cnt = 0;
     num = set_bit(num,pos);
     print_bits(num);
     num = clear_bit(num,pos);
     print_bits(num);
     num = toggle(num,pos);
     print_bits(num);
+    cnt = set_bitcnt(num);
+    
     
     return 0;
 }
