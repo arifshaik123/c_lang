@@ -3,7 +3,7 @@
 int set_bit(int,int);
 int clear_bit(int,int);
 void print_bits(int);
-
+int set_bitcnt(int);
 
 /**
 *@brief Printing the bits of the integer number 
@@ -70,15 +70,22 @@ int toggle(int num,int pos)
 
 
 /**
-*@brief 
+*@brief count the set bits in a integer number 
 *
-*
-*
+*@param num is a integer number 
+*@return count of the set bits in a number 
   */
 int set_bitcnt(int num)
 {
+    static cnt = 0;
+    for(int i = 31;i>=0;i--)
+      if(num>>i&1)
+        cnt++;
+  return cnt;
   
 }
+
+
 int main()
 {
     printf("Let's Start \n");
