@@ -1,6 +1,7 @@
 #include<stdio.h>
 
 int set_bit(int,int);
+int clear_bit(int,int);
 void print_bits(int);
 
 /** 
