@@ -21,7 +21,7 @@ int set_bit(int num,int pos)
 /**
 *@brief Printing the bits of the integer number 
 *
-*@param num is integer
+*@param num is a integer
 *@return Nothing to return 
    */
 void print_bits(int num)
@@ -38,6 +38,22 @@ void print_bits(int num)
         }
     }
 }
+
+
+/**
+*@brief Clear the bit of the integer Number
+*
+*@Param num is a integer number 
+*@Param Pos is a Position number 
+*@returns updated integer number 
+   */
+int clear_bit(int num,int pos)
+{
+   num = (num&~(1<<pos));
+   return num;
+}
+
+
 
 int main()
 {
