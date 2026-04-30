@@ -146,16 +146,14 @@ int longest_ones(int num)
   int lng = 0,tmp = 0;
   for(int i = 31;i>=0;i--)
   {
-    if((num>>i&1) && (num>>i+1&1))
-    {
+    if((num>>i&1))
        tmp++;
-      if(lng < tmp)
-        lng = tmp;
-    }
     else
       tmp = 0;
+    if(lng < tmp)
+        lng = tmp;
   }
-  return lng+1;
+  return lng;
 }
 
 int main()
