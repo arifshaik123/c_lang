@@ -121,6 +121,43 @@ int set_5oddbits(int num)
   return num;
 }
 
+/*
+*@brief clear first five odd bits in an given integer 
+*
+*@param num is a integer number 
+*@return updated integer number will be returned 
+  */
+int clear_5oddbits(int num)
+{
+  for(int i = 1;i<=10;i = i+1)
+    num = (num&~(1<<i));
+  return num;
+}
+
+
+/*
+*@brief count the longest series of ones in a integer 
+*
+*@param num is a integer number 
+*@return updated number will be returned 
+  */
+int longest_ones(int num)
+{
+  int lng = 0,tmp = 0;
+  for(int i = 31;i>=0;i--)
+  {
+    if((num>>i&1) && (num>>i+1&1))
+    {
+       tmp++;
+      if(lng < tmp)
+        lng = tmp;
+    }
+    else
+      tmp = 0;
+  }
+  return lng+1;
+}
+
 int main()
 {
     printf("Let's Start \n");
