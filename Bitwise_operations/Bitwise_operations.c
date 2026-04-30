@@ -116,7 +116,9 @@ int clear_bitcnt(int num)
   */
 int set_5oddbits(int num)
 {
-  
+  for(int i = 1;i<=10;i = i+1)
+    num = (num|(1<<i));
+  return num;
 }
 
 int main()
