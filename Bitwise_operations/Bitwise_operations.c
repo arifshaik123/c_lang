@@ -143,7 +143,7 @@ int clear_5oddbits(int num)
   */
 int longest_ones(int num)
 {
-  int lng = 0,tmp = 0;
+  static int lng = 0,tmp = 0;
   for(int i = 31;i>=0;i--)
   {
     if((num>>i&1))
@@ -155,6 +155,45 @@ int longest_ones(int num)
   }
   return lng;
 }
+
+
+/*
+*@brief pair bits in a integer number 
+*
+*@param num is a integer number 
+*@return pair bits of a integer number 
+  */
+int bit_pairs(int num)
+{
+  static int pair = 0;
+  for(int i = 31;i>=0;i--)
+  {
+    if((num>>i&1) && (num>>i-1&1))
+       pair++;
+    i = i-1;
+  }
+  return pair;
+}
+
+
+/*
+*@brief reverse the given integer number bits 
+*
+*@param num is a integer number 
+*@return updated integer number 
+  */
+int reverse_num(int num)
+{
+  static int rev = 0;
+  for(int i = 31;i>=0;i--)
+  {
+    rev<<=1;
+    rev|=num>>i&1;
+  }
+  return rev; 
+}
+
+
 
 int main()
 {
