@@ -170,6 +170,13 @@ int main()
     print_bits(num);
     cnt = set_bitcnt(num);
     print_bits(num);
-    
+    num = clear_bitcnt(num);
+    print_bits(num);  
+    num = set_5oddbits(num);
+    print_bits(num);  
+    num = clear_5oddbits(num);
+    print_bits(num); 
+    num = longest_ones(num);
+    print_bits(num); 
     return 0;
 }
