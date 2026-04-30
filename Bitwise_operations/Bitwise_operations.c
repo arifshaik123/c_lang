@@ -2,6 +2,7 @@
 #include<stdlib.h>
 #include<stdbool.h>
 
+//Decelerations of various functions 
 
 int set_bit(int,int);
 int clear_bit(int,int);
