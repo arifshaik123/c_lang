@@ -215,5 +215,10 @@ int main()
     print_bits(num); 
     num = longest_ones(num);
     print_bits(num); 
+    num = bit_pairs(num);
+    print_bits(num); 
+    num = reverse_num(num);
+     print_bits(num); 
+    
     return 0;
 }
