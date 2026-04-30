@@ -8,6 +8,11 @@ int clear_bit(int,int);
 void print_bits(int);
 int set_bitcnt(int);
 int clear_bitcnt(int);
+int set_5oddbits(int);
+int clear_5oddbits(int);
+int longest_ones(int);
+int bit_pairs(int);
+int reverse_num(int);
 
 
 /**
